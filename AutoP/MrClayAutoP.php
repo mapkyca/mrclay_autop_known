@@ -16,7 +16,7 @@ namespace mapkyca\autop;
  * @author Steve Clay <steve@mrclay.org>
  * @license http://www.opensource.org/licenses/mit-license.php  MIT License
  */
-class MrClay_AutoP {
+class MrClayAutoP {
 
     public $encoding = 'UTF-8';
 
