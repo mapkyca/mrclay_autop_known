@@ -24,12 +24,12 @@ class MrClayAutoP {
     public $encoding = 'UTF-8';
 
     /**
-     * @var DOMDocument
+     * @var \DOMDocument
      */
     protected $_doc = null;
 
     /**
-     * @var DOMXPath
+     * @var \DOMXPath
      */
     protected $_xpath = null;
 
@@ -179,7 +179,7 @@ class MrClayAutoP {
      *
      * @param DOMElement $el
      */
-    protected function _addParagraphs(DOMElement $el)
+    protected function _addParagraphs(\DOMElement $el)
     {
         // no need to recurse, just queue up
         $elsToProcess = array($el);
