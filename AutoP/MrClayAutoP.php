@@ -177,7 +177,7 @@ class MrClayAutoP {
     /**
      * Add P and BR elements as necessary
      *
-     * @param DOMElement $el
+     * @param \DOMElement $el
      */
     protected function _addParagraphs(\DOMElement $el)
     {
