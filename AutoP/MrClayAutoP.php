@@ -92,7 +92,7 @@ class MrClayAutoP {
         // allows preserving entities untouched
         $html = str_replace('&', $this->_unique . 'AMP', $html);
 
-        $this->_doc = new DOMDocument();
+        $this->_doc = new \DOMDocument();
        
         // parse to DOM, suppressing loadHTML warnings
         // http://www.php.net/manual/en/domdocument.loadhtml.php#95463
@@ -103,7 +103,7 @@ class MrClayAutoP {
             return false;
         }
 
-        $this->_xpath = new DOMXPath($this->_doc);
+        $this->_xpath = new \DOMXPath($this->_doc);
         // start processing recursively at the BODY element
         $nodeList = $this->_xpath->query('//body[1]');
         $this->_addParagraphs($nodeList->item(0));
@@ -124,7 +124,7 @@ class MrClayAutoP {
             return false;
         }
         // must re-create XPath object after DOM load
-        $this->_xpath = new DOMXPath($this->_doc);
+        $this->_xpath = new \DOMXPath($this->_doc);
 
         // strip AUTOPs that only have comments/whitespace
         foreach ($this->_xpath->query('//autop') as $autop) {
