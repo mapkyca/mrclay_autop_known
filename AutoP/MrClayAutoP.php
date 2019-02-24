@@ -10,6 +10,9 @@ namespace mapkyca\autop;
  * In DIV elements, Ps are only added when there would be at
  * least two of them.
  *
+ * 2019/02/24: Adopting and converting to composer project
+ * 	Marcus Povey <marcus@marcus-povey.co.uk>
+ *
  * 2017/11/20: Modified to avoid https://github.com/mrclay/old-misc/issues/7
  *      Marcus Povey <marcus@marcus-povey.co.uk>
  * 
